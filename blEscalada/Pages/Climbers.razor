@@ -26,22 +26,23 @@ else
         </tbody>
     </table>
 }
-<p><a href=@apiUrl>API</a></p>
+<p><a href=@GetApiUrl()>API</a></p>
 
 @functions
 {
-    string apiUrl = "https://www.remranger.com/escalada-api/user-read.php";
     User[] users;
+
+    public string GetApiUrl() => Utils.GetApiUrl("user", ApiKind.read);
 
     protected override async Task OnInitAsync()
     {
-        users = await Http.GetJsonAsync<User[]>(apiUrl);
+        users = await Http.GetJsonAsync<User[]>(GetApiUrl());
     }
 
     class User
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public object FirstName { get; set; }
+        public object LastName { get; set; }
         public string Gender { get; set; }
     }
 }

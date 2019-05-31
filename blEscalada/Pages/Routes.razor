@@ -51,7 +51,7 @@ else
 
     Route[] routes;
 
-    private string GetApiUrl() => $"{Utils.GetApiUrl("route", "read")}?locationId={LocationId}";
+    private string GetApiUrl() => $"{Utils.GetApiUrl("route", ApiKind.read)}?locationId={LocationId}";
 
     protected override async Task OnInitAsync()
     {

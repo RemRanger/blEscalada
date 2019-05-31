@@ -1,9 +1,11 @@
 ﻿namespace blEscalada
 {
+    public enum ApiKind { read, write };
+
     public class Utils
     {
         const string rootUrl = "https://www.remranger.com/escalada-api";
-        public static string GetApiUrl(string apiName, string kind)
+        public static string GetApiUrl(string apiName, ApiKind kind)
         {
             return $"{rootUrl}/{apiName}-{kind}.php";
         }
