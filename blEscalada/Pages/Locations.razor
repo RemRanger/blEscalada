@@ -1,0 +1,49 @@
+﻿@page "/locations"
+@inject HttpClient Http;
+
+<h1>Locations</h1>
+
+@if (locations == null)
+{
+    <WaitLoading />
+}
+else
+{
+    <table class="grid">
+        <thead>
+            <tr>
+                <th colSpan="2">Location</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Location location in locations)
+            {
+            <tr>
+                <td>@location.Name</td>
+                <td><a href="routes/@location.Id">&nbsp;Topo&nbsp;</a></td>
+                <td><a href="http://@location.WebsiteUrl">@location.WebsiteUrl</a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <p><a href=@apiUrl>API</a></p>
+}
+
+@functions
+{
+    string apiUrl = "https://www.remranger.com/escalada-api/location-read.php";
+    Location[] locations;
+
+    protected override async Task OnInitAsync()
+    {
+        locations = await Http.GetJsonAsync<Location[]>(apiUrl);
+    }
+
+    class Location
+    {
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string WebsiteUrl { get; set; }
+    }
+}

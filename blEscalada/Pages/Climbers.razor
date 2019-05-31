@@ -1,0 +1,48 @@
+﻿@page "/climbers"
+@inject HttpClient Http
+
+<h1>Climbers</h1>
+
+@if (users == null)
+{
+    <WaitLoading />
+}
+else
+{
+    <table class="grid">
+        <thead>
+            <tr>
+                <th colSpan="2">Climber</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (User user in users)
+            {
+                <tr>
+                    <td width="16" style="background-color: @(user.Gender == "F" ? "violet" : "blue")"></td>
+                    <td>@user.FirstName @user.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p><a href=@apiUrl>API</a></p>
+
+}
+
+@functions
+{
+    string apiUrl = "https://www.remranger.com/escalada-api/user-read.php";
+    User[] users;
+
+    protected override async Task OnInitAsync()
+    {
+        users = await Http.GetJsonAsync<User[]>(apiUrl);
+    }
+
+    class User
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Gender { get; set; }
+    }
+}
