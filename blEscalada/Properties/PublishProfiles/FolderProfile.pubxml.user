@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Temp\blEscalada-deploy</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9TTFqei2pU6g2P38uvEXhAAAAAACAAAAAAAQZgAAAAEAACAAAABDf3XAznZc/o8aPHfcEjYvWhCcWaeuXASgxN22oaCoBwAAAAAOgAAAAAIAACAAAABrDH26w7k+ffQ8GxiuiP1z7ZXwhgGZakxw0UGiuKelTyAAAAAl7DnWYYN3m9YZt2hjAtEXiRXHL13rU0dUGjv+qG85xkAAAABw3YxmJsn8gU1WrWX/98W7qixDC4yJDFTdg6j56A3pydCHi5/YeyI/+VBcEm0tMoAGX3bKg8TtEJYoXAeSlLbU</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="blEscalada/dist/css/site.css">
+      <publishTime>05/31/2019 10:02:21</publishTime>
+    </File>
+    <File Include="blEscalada/dist/favicon.ico">
+      <publishTime>05/31/2019 09:27:31</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/background.jpg">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/blazor.png">
+      <publishTime>05/31/2019 09:25:18</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/delete.png">
+      <publishTime>10/26/2012 14:07:48</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/edit.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/picture.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/result-fail.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/result-faults.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/result-finish.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/result-not-climbed.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/images/result-success.png">
+      <publishTime>04/05/2019 17:13:27</publishTime>
+    </File>
+    <File Include="blEscalada/dist/index.html">
+      <publishTime>05/31/2019 14:00:26</publishTime>
+    </File>
+    <File Include="blEscalada/dist/sample-data/weather.json">
+      <publishTime>05/31/2019 09:16:41</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/blazor.boot.json">
+      <publishTime>05/31/2019 16:29:40</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/blazor.server.js">
+      <publishTime>04/28/2019 02:51:56</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/blazor.webassembly.js">
+      <publishTime>04/28/2019 02:51:56</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/wasm/mono.js">
+      <publishTime>03/25/2019 11:52:32</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/wasm/mono.wasm">
+      <publishTime>03/25/2019 11:52:32</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/blEscalada.dll">
+      <publishTime>05/31/2019 16:44:11</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/blEscalada.pdb">
+      <publishTime>05/31/2019 16:44:11</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Microsoft.AspNetCore.Blazor.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Microsoft.AspNetCore.Components.Browser.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Microsoft.AspNetCore.Components.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>05/31/2019 16:44:11</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Microsoft.JSInterop.dll">
+      <publishTime>05/31/2019 16:44:11</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Mono.Security.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/Mono.WebAssembly.Interop.dll">
+      <publishTime>05/31/2019 16:44:11</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/mscorlib.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/System.ComponentModel.Annotations.dll">
+      <publishTime>05/31/2019 16:44:11</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/System.Core.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/System.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="blEscalada/dist/_framework/_bin/System.Net.Http.dll">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Blazor.dll">
+      <publishTime>04/28/2019 03:04:16</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Browser.dll">
+      <publishTime>04/28/2019 03:00:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.dll">
+      <publishTime>04/28/2019 02:56:28</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>04/27/2019 19:25:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>04/27/2019 19:25:24</publishTime>
+    </File>
+    <File Include="Microsoft.JSInterop.dll">
+      <publishTime>04/27/2019 19:28:22</publishTime>
+    </File>
+    <File Include="Mono.WebAssembly.Interop.dll">
+      <publishTime>04/27/2019 19:29:26</publishTime>
+    </File>
+    <File Include="System.ComponentModel.Annotations.dll">
+      <publishTime>04/24/2019 21:51:10</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/31/2019 16:44:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
