@@ -19,16 +19,17 @@ else
         <tbody>
             @foreach (Location location in locations)
             {
-            <tr>
-                <td>@location.Name</td>
-                <td><a href="routes/@location.Id">&nbsp;Topo&nbsp;</a></td>
-                <td><a href="http://@location.WebsiteUrl">@location.WebsiteUrl</a></td>
-            </tr>
+                <tr>
+                    <td>@location.Name</td>
+                    <td><a href="routes/@location.Id">&nbsp;Topo&nbsp;</a></td>
+                    <td><a href="http://@location.WebsiteUrl">@location.WebsiteUrl</a></td>
+                </tr>
             }
         </tbody>
     </table>
-    <p><a href=@apiUrl>API</a></p>
 }
+<p><a href=@apiUrl>API</a></p>
+
 
 @functions
 {
