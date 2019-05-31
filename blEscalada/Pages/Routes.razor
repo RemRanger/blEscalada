@@ -27,34 +27,35 @@ else
                     <td>@route.Rating</td>
                     <td>@route.Sublocation</td>
                     @if (route.Result == 0 && (route.Percentage ?? 0) != 0)
-                        {
-                            <td style="color:red">@(route.Percentage ?? 0)%</td>
-                        }
-                        else
-                        {
-                            <td align="center">
-                                @*@if (Utils.GetResultPic(route.Result) != null)
-                                    {<img src="@Utils.GetResultPic(route.Result)" alt="" />}*@
-                            </td>
-                        }
+                    {
+                        <td style="color:red">@(route.Percentage ?? 0)%</td>
+                    }
+                    else
+                    {
+                        <td align="center">
+                            @if (Utils.GetResultPic(route.Result) != null)
+                            {<img src="@Utils.GetResultPic(route.Result)" alt="" />}
+                        </td>
+                    }
                 </tr>
             }
         </tbody>
     </table>
 }
-<p><a href=@($"{apiUrl}?locationId={LocationId}")>API</a></p>
+<p><a href=@GetApiUrl()>API</a></p>
 
 @functions
 {
     [Parameter]
     public string LocationId { get; set; }
 
-    string apiUrl = "https://www.remranger.com/escalada-api/route-read.php";
     Route[] routes;
+
+    private string GetApiUrl() => $"{Utils.GetApiUrl("route", "read")}?locationId={LocationId}";
 
     protected override async Task OnInitAsync()
     {
-        routes = await Http.GetJsonAsync<Route[]>($"{apiUrl}?locationId={LocationId}");
+        routes = await Http.GetJsonAsync<Route[]>(GetApiUrl());
     }
 
     class Route
